@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Book  Management - Project\\BookManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|solutionrelative:bookmanagement.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|solutionrelative:bookmanagement.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|solutionrelative:bookmanagement.core\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "BookManagement.API\\Program.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Program.cs",
+              "RelativeToolTip": "BookManagement.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:14:56.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoansController.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\LoansController.cs",
+              "RelativeDocumentMoniker": "BookManagement.API\\Controllers\\LoansController.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\LoansController.cs",
+              "RelativeToolTip": "BookManagement.API\\Controllers\\LoansController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:36:06.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BookManagement.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BookManagement.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:35:50.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookManagement.API\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookManagement.API\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:34:37.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "BookManagement.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\User.cs",
+              "RelativeToolTip": "BookManagement.Core\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:22:18.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\Loan.cs",
+              "RelativeDocumentMoniker": "BookManagement.Core\\Entities\\Loan.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\Loan.cs",
+              "RelativeToolTip": "BookManagement.Core\\Entities\\Loan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:20:58.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "BookManagement.Core\\Entities\\Book.cs",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Entities\\Book.cs",
+              "RelativeToolTip": "BookManagement.Core\\Entities\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:17:06.871Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
