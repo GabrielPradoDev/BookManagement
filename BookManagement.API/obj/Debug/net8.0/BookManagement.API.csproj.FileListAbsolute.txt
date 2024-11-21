@@ -34,3 +34,8 @@ C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0
 C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagement.Core.pdb
 C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagement.Application.dll
 C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagement.Application.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagament.Models.dll
+C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagement.Infrastructure.dll
+C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagament.Models.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.API\bin\Debug\net8.0\BookManagement.Infrastructure.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.API\obj\Debug\net8.0\BookManagement.API.sourcelink.json

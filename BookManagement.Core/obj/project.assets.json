@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BookManagament.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BookManagament.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookManagament.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BookManagament.Models/1.0.0": {
+      "type": "project",
+      "path": "../BookManagament.Model/BookManagament.Models.csproj",
+      "msbuildProject": "../BookManagament.Model/BookManagament.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BookManagament.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Book  Management - Project\\BookManagement\\BookManagament.Model\\BookManagament.Models.csproj": {
+              "projectPath": "C:\\Book  Management - Project\\BookManagement\\BookManagament.Model\\BookManagament.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

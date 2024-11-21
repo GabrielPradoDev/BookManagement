@@ -9,3 +9,8 @@ C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.
 C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\refint\BookManagement.Core.dll
 C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\BookManagement.Core.pdb
 C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\ref\BookManagement.Core.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Core\bin\Debug\net8.0\BookManagament.Models.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Core\bin\Debug\net8.0\BookManagament.Models.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\BookManagement.Core.csproj.AssemblyReference.cache
+C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\BookManagement.Core.sourcelink.json
+C:\Book  Management - Project\BookManagement\BookManagement.Core\obj\Debug\net8.0\BookMana.2CCBC9BC.Up2Date

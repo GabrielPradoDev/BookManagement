@@ -9,6 +9,17 @@ namespace BookManagement.Core.Entities
 {
     public class User
     {
+        public User(string? name, string? email, string? phone)
+        {
+            Name = name;
+            Email = email;
+            Phone = phone;
+        }
+        public User()
+        {
+
+        }
+
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Email { get; set; }

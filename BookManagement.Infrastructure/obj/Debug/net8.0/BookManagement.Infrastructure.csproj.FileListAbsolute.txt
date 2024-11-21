@@ -9,3 +9,10 @@ C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\D
 C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\refint\BookManagement.Infrastructure.dll
 C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\BookManagement.Infrastructure.pdb
 C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\ref\BookManagement.Infrastructure.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\bin\Debug\net8.0\BookManagament.Models.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\bin\Debug\net8.0\BookManagement.Core.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\bin\Debug\net8.0\BookManagement.Core.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\bin\Debug\net8.0\BookManagament.Models.pdb
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\BookManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\BookManagement.Infrastructure.sourcelink.json
+C:\Book  Management - Project\BookManagement\BookManagement.Infrastructure\obj\Debug\net8.0\BookMana.A332F634.Up2Date

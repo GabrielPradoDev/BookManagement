@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.API", "BookManagement.API\BookManagement.API.csproj", "{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.API", "BookManagement.API\BookManagement.API.csproj", "{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.Infrastructure", "BookManagement.Infrastructure\BookManagement.Infrastructure.csproj", "{63EDD90F-54C6-458D-937B-79B36593405F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Infrastructure", "BookManagement.Infrastructure\BookManagement.Infrastructure.csproj", "{63EDD90F-54C6-458D-937B-79B36593405F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.Application", "BookManagement.Application\BookManagement.Application.csproj", "{A9DDC788-CFE8-4C01-89C3-6F0CDE06EEFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Application", "BookManagement.Application\BookManagement.Application.csproj", "{A9DDC788-CFE8-4C01-89C3-6F0CDE06EEFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagement.Core", "BookManagement.Core\BookManagement.Core.csproj", "{EFFF2273-9E1D-4A06-8256-4969B05374BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagement.Core", "BookManagement.Core\BookManagement.Core.csproj", "{EFFF2273-9E1D-4A06-8256-4969B05374BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagament.Models", "BookManagament.Model\BookManagament.Models.csproj", "{8C6D1CAD-EBA3-42CD-BCA8-F1351E514162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoookManagement.Test", "BoookManagement.Test\BoookManagement.Test.csproj", "{5BC796CE-7361-47AC-AB1F-3F4DE000B0F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{EFFF2273-9E1D-4A06-8256-4969B05374BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFFF2273-9E1D-4A06-8256-4969B05374BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFFF2273-9E1D-4A06-8256-4969B05374BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6D1CAD-EBA3-42CD-BCA8-F1351E514162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6D1CAD-EBA3-42CD-BCA8-F1351E514162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6D1CAD-EBA3-42CD-BCA8-F1351E514162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6D1CAD-EBA3-42CD-BCA8-F1351E514162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC796CE-7361-47AC-AB1F-3F4DE000B0F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC796CE-7361-47AC-AB1F-3F4DE000B0F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC796CE-7361-47AC-AB1F-3F4DE000B0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC796CE-7361-47AC-AB1F-3F4DE000B0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

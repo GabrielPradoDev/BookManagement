@@ -7,14 +7,46 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "BookManagement.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BookManagement.Core": "1.0.0"
+        },
         "runtime": {
           "BookManagement.Infrastructure.dll": {}
+        }
+      },
+      "BookManagament.Models/1.0.0": {
+        "runtime": {
+          "BookManagament.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BookManagement.Core/1.0.0": {
+        "dependencies": {
+          "BookManagament.Models": "1.0.0"
+        },
+        "runtime": {
+          "BookManagement.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "BookManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookManagament.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookManagement.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
