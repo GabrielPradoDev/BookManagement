@@ -20,6 +20,20 @@ public class UserServices : IUserService
         return listFinal;
     }
 
+    public async Task<UsersViewModel> GetById(int id)
+    {
+        User user = await _userRepository.GetById(id);
+
+        if (user == null)
+        {
+            return null; // Retorna null se o usuário não for encontrado
+        }
+
+        // Converte o objeto User para UsersViewModel
+        UsersViewModel viewModel = ToUserDto(user);
+        return viewModel;
+    }
+
     public List<UsersViewModel> ToUserDto(List<User> users)
     {
         List<UsersViewModel> list = new List<UsersViewModel>();
@@ -27,12 +41,24 @@ public class UserServices : IUserService
         {
             UsersViewModel viewModel = new UsersViewModel()
             {
-               Name = user.Name,
-               Email = user.Email,
-               Phone = user.Phone
+                Name = user.Name,
+                Email = user.Email,
+                Phone = user.Phone
             };
             list.Add(viewModel);
         }
         return list;
     }
+
+    // Método auxiliar para converter um único User em UsersViewModel
+    public UsersViewModel ToUserDto(User user)
+    {
+        return new UsersViewModel
+        {
+            Name = user.Name,
+            Email = user.Email,
+            Phone = user.Phone
+        };
+    }
+
 }

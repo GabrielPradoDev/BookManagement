@@ -5,27 +5,22 @@ using BookManagement.Infrastructure.Persistence.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Registra as dependências dos Services
+// Dependency Injection - Services
 builder.Services.AddScoped<IUserService, UserServices>();
 
-// Registra as dependencias dos Repositories
+// Dependency Injection - Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
-else
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options =>
@@ -33,6 +28,11 @@ else
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "BookManagement");
         options.RoutePrefix = string.Empty; // Swagger na raiz
     });
+}
+else
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -44,4 +44,5 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();
+
 app.Run();

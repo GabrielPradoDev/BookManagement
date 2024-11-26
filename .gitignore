@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
 # User-specific files
 *.rsuser
 *.suo
@@ -31,6 +38,8 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+# Logs
+*.log
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -53,7 +62,11 @@ nunit-*.xml
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
-
+# User-specific files
+*.rsuser
+*.vcxproj.user
+*.opendb
+*.sqlite
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
 
