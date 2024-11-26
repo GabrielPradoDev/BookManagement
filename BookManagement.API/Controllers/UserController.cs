@@ -23,10 +23,16 @@ public class UserController : ControllerBase
 
     // GET api/users/id
     [HttpGet("{id}")]
-    public IActionResult GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
+        var user = await _userService.GetById(id);
 
-       return Ok();
+        if(user == null)
+        {
+            NotFound();
+        }
+
+       return Ok(user);
     }
 
     #region COMENTARIO PARA FAZER DEPOIS

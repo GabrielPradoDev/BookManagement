@@ -9,8 +9,9 @@ namespace BookManagement.Core.Entities
 {
     public class User
     {
-        public User(string? name, string? email, string? phone)
+        public User(int id,string? name, string? email, string? phone)
         {
+            Id = id;
             Name = name;
             Email = email;
             Phone = phone;
