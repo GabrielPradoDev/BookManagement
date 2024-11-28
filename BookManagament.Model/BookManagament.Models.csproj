@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="InputModel\" />
     <Folder Include="Enum\" />
   </ItemGroup>
 

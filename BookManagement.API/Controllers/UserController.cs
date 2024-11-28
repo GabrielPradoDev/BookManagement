@@ -1,4 +1,5 @@
-﻿using BookManagament.Models.ViewModel;
+﻿using BookManagament.Models.InputModel;
+using BookManagament.Models.ViewModel;
 using BookManagement.Core.Interface.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +16,10 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("")]
-
-    public Task<List<UsersViewModel>> GetAll()
+    public async Task<ActionResult<List<UsersViewModel>>> GetAll()
     {
-        return _userService.GetAllUsers();
+        var users = await _userService.GetAllUsers();
+        return Ok(users);
     }
 
     // GET api/users/id
@@ -33,6 +34,18 @@ public class UserController : ControllerBase
         }
 
        return Ok(user);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateUser([FromBody] UsersInputModel input)
+    {
+        if(input == null)
+        {
+            return BadRequest("Dados do usuario obrigatório");
+        }
+        var createdUser = await _userService.CreateUser(input);
+
+        return CreatedAtAction(nameof(GetById), new { id = createdUser.Id}, createdUser);
     }
 
     #region COMENTARIO PARA FAZER DEPOIS
