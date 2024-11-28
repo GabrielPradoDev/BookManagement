@@ -35,11 +35,9 @@ namespace BookManagement.Infrastructure.Persistence.Repository
 
         public async Task<User> CreateUser(User user)
         {
-            user.Id = _users.Any() ? _users.Max(u => u.Id) + 1 : 1;
-
-            _users.Add(user);
-
-            return await Task.FromResult(user);
+            user.Id = _users.Any() ? _users.Max(u => u.Id) + 1 : 1; // Gera um ID único
+            _users.Add(user); // Adiciona à lista
+            return await Task.FromResult(user); // Retorna o usuário criado
         }
     }
 }
