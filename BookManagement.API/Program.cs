@@ -17,6 +17,8 @@ builder.Services.AddScoped<IUserService, UserServices>();
 // Dependency Injection - Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline

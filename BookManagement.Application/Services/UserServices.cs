@@ -1,4 +1,5 @@
-﻿using BookManagament.Models.ViewModel;
+﻿using BookManagament.Models.InputModel;
+using BookManagament.Models.ViewModel;
 using BookManagement.Core.Entities;
 using BookManagement.Core.Interface.Repository;
 using BookManagement.Core.Interface.Service;
@@ -14,10 +15,15 @@ public class UserServices : IUserService
     }
     public async Task<List<UsersViewModel>> GetAllUsers()
     {
-        List<User> listUsers = await _userRepository.GetAllUsers();
-        List<UsersViewModel> listFinal = ToUserDto(listUsers);
+        var users = await _userRepository.GetAllUsers();
 
-        return listFinal;
+        var usersViewModel = users.Select(ToUserDto).ToList();
+        return usersViewModel;
+
+        //List<User> listUsers = await _userRepository.GetAllUsers();
+        //List<UsersViewModel> listFinal = ToUserDto(listUsers);
+
+        //return listFinal;
     }
 
     public async Task<UsersViewModel> GetById(int id)
@@ -34,20 +40,19 @@ public class UserServices : IUserService
         return viewModel;
     }
 
-    public List<UsersViewModel> ToUserDto(List<User> users)
+    public async Task<UsersViewModel> CreateUser(UsersInputModel input)
     {
-        List<UsersViewModel> list = new List<UsersViewModel>();
-        foreach (User user in users)
+        var newUSer = new User
         {
-            UsersViewModel viewModel = new UsersViewModel()
-            {
-                Name = user.Name,
-                Email = user.Email,
-                Phone = user.Phone
-            };
-            list.Add(viewModel);
-        }
-        return list;
+            
+            Name = input.Name,
+            Email = input.Email,
+            Phone = input.Phone
+        };
+
+        var createdUser = await _userRepository.CreateUser(newUSer);
+
+        return ToUserDto(createdUser);
     }
 
     // Método auxiliar para converter um único User em UsersViewModel
@@ -55,6 +60,7 @@ public class UserServices : IUserService
     {
         return new UsersViewModel
         {
+            Id = user.Id,
             Name = user.Name,
             Email = user.Email,
             Phone = user.Phone
