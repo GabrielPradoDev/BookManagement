@@ -48,6 +48,25 @@ public class UserController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdUser.Id}, createdUser);
     }
 
+    [HttpPost("{id}")]
+    public async Task<IActionResult>UpdateUser(int id,[FromBody] UsersUpdateInputModel input)
+    {
+        if (input == null)
+        {
+            return BadRequest("Dados Invalidos");
+        }
+        var updateUser = await _userService.UpdateUser(id,input);
+
+        if (updateUser == null)
+        {
+            return NotFound($"Usuario com Id {id} não encontrado ");
+        }
+
+        return Ok(updateUser);
+    }
+
+
+
     #region COMENTARIO PARA FAZER DEPOIS
     // POST api/users
     //[HttpPost]

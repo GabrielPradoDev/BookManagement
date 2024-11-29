@@ -39,5 +39,20 @@ namespace BookManagement.Infrastructure.Persistence.Repository
             _users.Add(user); // Adiciona à lista
             return await Task.FromResult(user); // Retorna o usuário criado
         }
+
+        public async Task<User> UpdateUser(User user)
+        {
+            var existingUser = _users.FirstOrDefault(u => u.Id == user.Id);
+            if (existingUser == null)
+            {
+                throw new KeyNotFoundException($"Usuário com ID {user.Id} não encontrado.");
+            }
+            
+                existingUser.Name = user.Name;
+                existingUser.Email = user.Email;
+                existingUser.Phone = user.Phone;
+
+            return await Task.FromResult(existingUser);
+        }
     }
 }

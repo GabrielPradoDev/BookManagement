@@ -54,6 +54,23 @@ public class UserServices : IUserService
 
         return ToUserDto(createdUser);
     }
+    public async Task<UsersViewModel> UpdateUser(int id,UsersUpdateInputModel input)
+    {
+        var user = await _userRepository.GetById(id);
+        if (user == null)
+        {
+            return null;
+        }
+        user.Name = input.Name;
+        user.Email = input.Email;
+        user.Phone = input.Phone;
+
+        await _userRepository.UpdateUser(user);
+
+        return ToUserDto(user);
+    }
+
+
 
     // Método auxiliar para converter um único User em UsersViewModel
     public UsersViewModel ToUserDto(User user)
