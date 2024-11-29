@@ -1,6 +1,5 @@
 ﻿using BookManagement.Core.Entities;
 using BookManagement.Core.Interface.Repository;
-using BookManagament.Models.ViewModel;
 
 namespace BookManagement.Infrastructure.Persistence.Repository
 {

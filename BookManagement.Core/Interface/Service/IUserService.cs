@@ -1,6 +1,5 @@
 ﻿using BookManagament.Models.InputModel;
 using BookManagament.Models.ViewModel;
-using BookManagement.Core.Entities;
 
 namespace BookManagement.Core.Interface.Service;
 
