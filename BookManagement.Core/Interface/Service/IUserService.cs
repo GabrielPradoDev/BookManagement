@@ -9,4 +9,5 @@ public interface IUserService
     Task<List<UsersViewModel>> GetAllUsers();
     Task<UsersViewModel> GetById(int id);
     Task<UsersViewModel> CreateUser(UsersInputModel input);
+    Task<UsersViewModel> UpdateUser(int id,UsersUpdateInputModel input);
 }
