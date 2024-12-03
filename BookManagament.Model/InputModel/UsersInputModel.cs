@@ -1,10 +1,9 @@
-﻿namespace BookManagament.Models.InputModel
+﻿namespace BookManagament.Models.InputModel;
+
+public class UsersInputModel
 {
-    public class UsersInputModel
-    {
-        
-        public string? Name { get; set; }
-        public string? Email { get; set; }
-        public string? Phone { get; set; }
-    }
+    
+    public string? Name { get; set; }
+    public string? Email { get; set; }
+    public string? Phone { get; set; }
 }
