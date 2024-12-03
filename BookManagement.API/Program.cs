@@ -13,11 +13,14 @@ builder.Services.AddSwaggerGen();
 
 // Dependency Injection - Services
 builder.Services.AddScoped<IUserService, UserServices>();
+builder.Services.AddScoped<IBookService, BookServices>();
 
 // Dependency Injection - Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
