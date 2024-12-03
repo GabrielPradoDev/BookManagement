@@ -53,5 +53,17 @@ namespace BookManagement.Infrastructure.Persistence.Repository
 
             return await Task.FromResult(existingUser);
         }
+
+        public async Task DeleteUser(int id)
+        {
+            var user = _users.FirstOrDefault(u => u.Id == id);
+
+            if(user != null)
+            {
+                _users.Remove(user);
+            }
+
+            await Task.CompletedTask;
+        }
     }
 }

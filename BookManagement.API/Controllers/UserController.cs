@@ -26,14 +26,15 @@ public class UserController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
-        var user = await _userService.GetById(id);
-
-        if(user == null)
+        try
         {
-            NotFound();
+            var user = await _userService.GetById(id);
+            return Ok(user);
         }
-
-       return Ok(user);
+        catch(KeyNotFoundException ex)
+        {
+            return NotFound(new { Message =ex.Message });
+        }
     }
 
     [HttpPost]
@@ -65,7 +66,18 @@ public class UserController : ControllerBase
         return Ok(updateUser);
     }
 
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        var result = await _userService.DeleteUser(id);
 
+        if (!result)
+        {
+            return NotFound($"Usuario com Id {id} não foi encontrado");
+        }
+
+        return NoContent();
+    }
 
     #region COMENTARIO PARA FAZER DEPOIS
     // POST api/users

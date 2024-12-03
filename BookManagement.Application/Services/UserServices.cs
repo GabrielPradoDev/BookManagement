@@ -32,12 +32,14 @@ public class UserServices : IUserService
 
         if (user == null)
         {
-            return null; // Retorna null se o usuário não for encontrado
+           throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe"); // Retorna null se o usuário não for encontrado
         }
 
         // Converte o objeto User para UsersViewModel
-        UsersViewModel viewModel = ToUserDto(user);
-        return viewModel;
+        //UsersViewModel viewModel = ToUserDto(user);
+        //return viewModel;
+
+        return ToUserDto(user);
     }
 
     public async Task<UsersViewModel> CreateUser(UsersInputModel input)
@@ -70,6 +72,18 @@ public class UserServices : IUserService
         return ToUserDto(user);
     }
 
+    public async Task<bool> DeleteUser(int id)
+    {
+        var user = await _userRepository.GetById(id);
+
+        if(user == null)
+        {
+            return false;
+        }
+
+        await _userRepository.DeleteUser(id);
+        return true;
+    }
 
 
     // Método auxiliar para converter um único User em UsersViewModel
