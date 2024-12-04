@@ -50,6 +50,38 @@ public class BookServices : IBookService
 
         return ToUserDto(createdBook);
     }
+    public async Task<BookViewModel> UpdateBook(int id, BooksUpdateInputModel input)
+    {
+
+        var book = await _bookRepository.GetById(id);
+        if (book == null)
+        {
+            return null;
+        }
+        book.Title = input.Title;
+        book.ISBN = input.ISBN;
+        book.Year = input.Year;
+        book.Author = input.Author;
+        book.Available = input.Available;
+        book.QTD = input.QTD;
+
+        await _bookRepository.UpdateBook(book);
+
+        return ToUserDto(book);
+    }
+
+    public async Task<bool> DeleteBook(int id)
+    {
+        var user = await _bookRepository.GetById(id);
+
+        if (user == null)
+        {
+            return false;
+        }
+
+        await _bookRepository.DeleteBook(id);
+        return true;
+    }
 
     // Método auxiliar para converter um único User em UsersViewModel
     public BookViewModel ToUserDto(Book book)
