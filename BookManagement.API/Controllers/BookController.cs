@@ -1,8 +1,6 @@
 ﻿using BookManagament.Models.InputModel;
 using BookManagament.Models.ViewModel;
-using BookManagement.Application.Services;
 using BookManagement.Core.Interface.Service;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookManagement.API.Controllers;

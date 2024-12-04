@@ -1,5 +1,4 @@
-﻿using BookManagament.Models.ViewModel;
-using BookManagement.Core.Entities;
+﻿using BookManagement.Core.Entities;
 
 namespace BookManagement.Core.Interface.Repository;
 
