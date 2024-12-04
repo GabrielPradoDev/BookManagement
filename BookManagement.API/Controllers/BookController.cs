@@ -45,10 +45,42 @@ public class BookController : ControllerBase
     {
         if (input == null)
         {
-            return BadRequest("Dados do usuario obrigatório");
+            return BadRequest("Dados do Livro obrigatório");
         }
         var createdBook = await _bookService.CreateBook(input);
 
         return CreatedAtAction(nameof(GetById), new { id = createdBook.Id }, createdBook);
     }
+
+    [HttpPost("{id}")]
+    public async Task<IActionResult> UpdateBook(int id, [FromBody] BooksUpdateInputModel input)
+    {
+        if (input == null)
+        {
+            return BadRequest("Dados Invalidos");
+        }
+        var updateUser = await _bookService.UpdateBook(id, input);
+
+        if (updateUser == null)
+        {
+            return NotFound($"Livro com Id {id} não encontrado ");
+        }
+
+        return Ok(updateUser);
+    }
+
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteBook(int id)
+    {
+        var result = await _bookService.DeleteBook(id);
+
+        if (!result)
+        {
+            return NotFound($"Livro com Id {id} não foi encontrado");
+        }
+
+        return NoContent();
+    }
+
 }

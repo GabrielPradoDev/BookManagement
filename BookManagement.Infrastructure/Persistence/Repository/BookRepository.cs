@@ -38,4 +38,35 @@ public class BookRepository : IBookRepository
         _books.Add(book); // Adiciona à lista
         return await Task.FromResult(book); // Retorna o usuário criado
     }
+
+    public async Task<Book> UpdateBook(Book book)
+    {
+
+        var existingBook = _books.FirstOrDefault(u => u.Id == book.Id);
+        if (existingBook == null)
+        {
+            throw new KeyNotFoundException($"Usuário com ID {book.Id} não encontrado.");
+        }
+
+        existingBook.Title = book.Title;
+        existingBook.ISBN = book.ISBN;
+        existingBook.Author = book.Author;
+        existingBook.Year = book.Year;
+        existingBook.QTD = book.QTD;
+        existingBook.Available = book.Available;
+
+        return await Task.FromResult(existingBook);
+    }
+
+    public async Task DeleteBook(int id)
+    {
+        var user = _books.FirstOrDefault(u => u.Id == id);
+
+        if (user != null)
+        {
+            _books.Remove(user);
+        }
+
+        await Task.CompletedTask;
+    }
 }
