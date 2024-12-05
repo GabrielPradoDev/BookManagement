@@ -19,11 +19,6 @@ public class UserServices : IUserService
 
         var usersViewModel = users.Select(ToUserDto).ToList();
         return usersViewModel;
-
-        //List<User> listUsers = await _userRepository.GetAllUsers();
-        //List<UsersViewModel> listFinal = ToUserDto(listUsers);
-
-        //return listFinal;
     }
 
     public async Task<UsersViewModel> GetById(int id)
@@ -34,10 +29,6 @@ public class UserServices : IUserService
         {
            throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe"); // Retorna null se o usuário não for encontrado
         }
-
-        // Converte o objeto User para UsersViewModel
-        //UsersViewModel viewModel = ToUserDto(user);
-        //return viewModel;
 
         return ToUserDto(user);
     }
