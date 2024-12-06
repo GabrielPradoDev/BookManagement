@@ -1,4 +1,5 @@
-﻿using BookManagament.Models.ViewModel;
+﻿using BookManagament.Models.InputModel;
+using BookManagament.Models.ViewModel;
 using BookManagement.Application.Services;
 using BookManagement.Core.Interface.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -49,4 +50,30 @@ public class LoanController : ControllerBase
             return StatusCode(500, new { Message = "Erro interno no servidor.", Details = ex.Message });
         }
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] LoanInputModel input)
+    {
+        if (input == null)
+        {
+            return BadRequest("Dados do emprestimo são obrigatório");
+        }
+
+
+        try
+        {
+            var createdLoan = await _loanService.Create(input);
+            return CreatedAtAction(nameof(GetLoanById), new { id = createdLoan.Id }, createdLoan);
+        }
+        catch(KeyNotFoundException ex)
+        {
+            return NotFound(new { Message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { Message = "Erro interno no servidor", Details = ex.Message });
+        }
+    }
+
 }
+
