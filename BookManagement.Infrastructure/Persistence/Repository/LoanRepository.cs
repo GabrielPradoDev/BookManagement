@@ -5,9 +5,9 @@ namespace BookManagement.Infrastructure.Persistence.Repository;
 
 public class LoanRepository : ILoanRepository
 {
-    private readonly List<Loan> _loans;
-    private readonly List<User> _users;
-    private readonly List<Book> _books;
+    private static List<Loan> _loans;
+    private static List<User> _users;
+    private static List<Book> _books;
 
     public LoanRepository()
     {
@@ -72,6 +72,15 @@ public class LoanRepository : ILoanRepository
             loan.User = _users.FirstOrDefault(u => u.Id == loan.UserId);
             loan.Book = _books.FirstOrDefault(b => b.Id == loan.BookId);
         }
+        return await Task.FromResult(loan);
+    }
+
+    public async Task<Loan> Create(Loan loan)
+    {
+        loan.Id = _loans.Any() ? _loans.Max(l => l.Id) + 1 : 1;
+
+        _loans.Add(loan);
+
         return await Task.FromResult(loan);
     }
 }
