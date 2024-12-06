@@ -58,8 +58,38 @@ public class LoanServices : ILoanService
     }
 
 
-        // Método auxiliar para converter um único User em UsersViewModel
-        public LoansViewModel ToLoanDto(Loan loan)
+    public async Task<string> ReturnBook(int id)
+    {
+        // Busca o empréstimo no repositório
+        var loan = await _loanrepository.GetLoanById(id);
+        if (loan == null)
+        {
+            throw new KeyNotFoundException($"Empréstimo com ID {id} não encontrado.");
+        }
+
+        // Verifica se o livro já foi devolvido
+        if (loan.IsReturned)
+        {
+            return "O livro já foi devolvido.";
+        }
+
+        // Atualiza a data de devolução e o status
+        loan.ReturnDate = DateTime.Now;
+        loan.IsReturned = true;
+
+        // Salva as alterações no repositório
+        await _loanrepository.UpdateLoan(loan);
+
+        // Calcula o status da devolução
+        var daysLate = (loan.ReturnDate.Value - loan.ExpectedReturnDate).Days;
+
+        return daysLate > 0
+            ? $"Livro devolvido com {daysLate} dias de atraso."
+            : "Livro devolvido em dia.";
+    }
+
+    // Método auxiliar para converter um único User em UsersViewModel
+    public LoansViewModel ToLoanDto(Loan loan)
     {
         return new LoansViewModel
         {

@@ -75,5 +75,22 @@ public class LoanController : ControllerBase
         }
     }
 
+    [HttpPut("return/{id}")]
+    public async Task<IActionResult> ReturnBook(int id)
+    {
+        try
+        {
+            var message = await _loanService.ReturnBook(id);
+            return Ok(new { Message = message });
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { Message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { Message = "Erro interno no servidor.", Details = ex.Message });
+        }
+    }
 }
 
