@@ -1,4 +1,5 @@
-﻿using BookManagament.Models.ViewModel;
+﻿using BookManagament.Models.InputModel;
+using BookManagament.Models.ViewModel;
 using BookManagement.Core.Entities;
 using BookManagement.Core.Interface.Repository;
 using BookManagement.Core.Interface.Service;
@@ -34,9 +35,31 @@ public class LoanServices : ILoanService
         return ToLoanDto(loan);
     }
 
+    public async Task<LoansViewModel> Create(LoanInputModel input)
+    {
+        if (input.ExpectedReturnDate <= DateTime.Now)
+        {
+           throw new ArgumentException("A data de devolução prevista deve ser maior que a data atual.");
+        }
 
-    // Método auxiliar para converter um único User em UsersViewModel
-    public LoansViewModel ToLoanDto(Loan loan)
+        var loan = new Loan
+        {
+            UserId = input.UserId,
+            BookId = input.BookId,
+            LoanDate = input.LoanDate,
+            ExpectedReturnDate = input.ExpectedReturnDate,
+            IsReturned = false
+        };
+
+        var createdLoan = await _loanrepository.Create(loan);
+
+        return ToLoanDto(createdLoan);
+
+    }
+
+
+        // Método auxiliar para converter um único User em UsersViewModel
+        public LoansViewModel ToLoanDto(Loan loan)
     {
         return new LoansViewModel
         {
