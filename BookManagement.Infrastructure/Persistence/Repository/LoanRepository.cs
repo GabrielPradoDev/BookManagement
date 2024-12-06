@@ -83,5 +83,17 @@ public class LoanRepository : ILoanRepository
 
         return await Task.FromResult(loan);
     }
+
+    public async Task UpdateLoan(Loan loan)
+    {
+        var existingLoan = _loans.FirstOrDefault(l => l.Id == loan.Id);
+        if (existingLoan != null)
+        {
+            existingLoan.IsReturned = loan.IsReturned;
+            existingLoan.ReturnDate = loan.ReturnDate;
+        }
+
+        await Task.CompletedTask;
+    }
 }
 
