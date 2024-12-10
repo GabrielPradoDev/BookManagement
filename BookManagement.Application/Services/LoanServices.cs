@@ -3,7 +3,6 @@ using BookManagament.Models.ViewModel;
 using BookManagement.Core.Entities;
 using BookManagement.Core.Interface.Repository;
 using BookManagement.Core.Interface.Service;
-using BookManagement.Infrastructure.Persistence.Repository;
 
 namespace BookManagement.Application.Services;
 
