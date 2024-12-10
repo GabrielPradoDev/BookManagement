@@ -24,6 +24,19 @@
         "runtime": {
           "bin/placeholder/BookManagement.Core.dll": {}
         }
+      },
+      "BookManagement.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BookManagement.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BookManagement.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookManagement.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -37,11 +50,17 @@
       "type": "project",
       "path": "../BookManagement.Core/BookManagement.Core.csproj",
       "msbuildProject": "../BookManagement.Core/BookManagement.Core.csproj"
+    },
+    "BookManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../BookManagement.Infrastructure/BookManagement.Infrastructure.csproj",
+      "msbuildProject": "../BookManagement.Infrastructure/BookManagement.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BookManagement.Core >= 1.0.0"
+      "BookManagement.Core >= 1.0.0",
+      "BookManagement.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -78,6 +97,9 @@
           "projectReferences": {
             "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\BookManagement.Core.csproj": {
               "projectPath": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\BookManagement.Core.csproj"
+            },
+            "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj"
             }
           }
         }
