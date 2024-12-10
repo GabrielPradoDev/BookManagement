@@ -77,8 +77,8 @@ public class LoanRepository : ILoanRepository
 
     public async Task<Loan> Create(Loan loan)
     {
-        loan.Id = _loans.Any() ? _loans.Max(l => l.Id) + 1 : 1;
 
+        loan.Id = _loans.Any() ? _loans.Max(l => l.Id) + 1 : 1;
         _loans.Add(loan);
 
         return await Task.FromResult(loan);

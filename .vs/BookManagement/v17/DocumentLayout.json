@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{A9DDC788-CFE8-4C01-89C3-6F0CDE06EEFB}|BookManagement.Application\\BookManagement.Application.csproj|solutionrelative:bookmanagement.application\\services\\loanservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.infrastructure\\persistence\\repository\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|solutionrelative:bookmanagement.infrastructure\\persistence\\repository\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\interface\\repository\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|solutionrelative:bookmanagement.core\\interface\\repository\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.infrastructure\\persistence\\repository\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|solutionrelative:bookmanagement.infrastructure\\persistence\\repository\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\interface\\service\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +23,20 @@
       "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.infrastructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|solutionrelative:bookmanagement.infrastructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9DDC788-CFE8-4C01-89C3-6F0CDE06EEFB}|BookManagement.Application\\BookManagement.Application.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9DDC788-CFE8-4C01-89C3-6F0CDE06EEFB}|BookManagement.Application\\BookManagement.Application.csproj|solutionrelative:bookmanagement.application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\interface\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|solutionrelative:bookmanagement.core\\interface\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28F5D62-6BDF-48C7-95E1-1984A0B4F819}|BookManagement.API\\BookManagement.API.csproj|solutionrelative:bookmanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.infrastructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDD90F-54C6-458D-937B-79B36593405F}|BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj|solutionrelative:bookmanagement.infrastructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EFFF2273-9E1D-4A06-8256-4969B05374BC}|BookManagement.Core\\BookManagement.Core.csproj|c:\\book  management - project\\bookmanagement\\bookmanagement.core\\interface\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,8 +53,12 @@
           "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BookManagement.API\\Controllers\\UserController.cs",
@@ -68,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Interface\\Service\\IUserService.cs",
               "RelativeDocumentMoniker": "BookManagement.Core\\Interface\\Service\\IUserService.cs",
@@ -77,17 +81,18 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T00:46:03.154Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "UserServices.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Application\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "BookManagement.Application\\Services\\UserServices.cs",
               "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Application\\Services\\UserServices.cs",
               "RelativeToolTip": "BookManagement.Application\\Services\\UserServices.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAUwCcAAAAMAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwAoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T00:46:52.007Z",
               "IsPinned": true,
@@ -108,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\Persistence\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "BookManagement.Infrastructure\\Persistence\\Repository\\UserRepository.cs",
@@ -121,10 +126,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LoanController.cs",
@@ -132,7 +133,7 @@
               "RelativeDocumentMoniker": "BookManagement.API\\Controllers\\LoanController.cs",
               "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.API\\Controllers\\LoanController.cs",
               "RelativeToolTip": "BookManagement.API\\Controllers\\LoanController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAmwFwAAAAJAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwFQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T01:03:51.789Z",
               "EditorCaption": ""
@@ -145,7 +146,7 @@
               "RelativeDocumentMoniker": "BookManagement.Core\\Interface\\Service\\ILoanService.cs",
               "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Interface\\Service\\ILoanService.cs",
               "RelativeToolTip": "BookManagement.Core\\Interface\\Service\\ILoanService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T01:04:15.443Z",
               "EditorCaption": ""
@@ -156,16 +157,16 @@
               "Title": "LoanServices.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Application\\Services\\LoanServices.cs",
               "RelativeDocumentMoniker": "BookManagement.Application\\Services\\LoanServices.cs",
-              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Application\\Services\\LoanServices.cs",
-              "RelativeToolTip": "BookManagement.Application\\Services\\LoanServices.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwFAAAAAdAAAA",
+              "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Application\\Services\\LoanServices.cs*",
+              "RelativeToolTip": "BookManagement.Application\\Services\\LoanServices.cs*",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAnwIQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T01:04:41.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ILoanRepository.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\Interface\\Repository\\ILoanRepository.cs",
               "RelativeDocumentMoniker": "BookManagement.Core\\Interface\\Repository\\ILoanRepository.cs",
@@ -178,13 +179,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoanRepository.cs",
               "DocumentMoniker": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\Persistence\\Repository\\LoanRepository.cs",
               "RelativeDocumentMoniker": "BookManagement.Infrastructure\\Persistence\\Repository\\LoanRepository.cs",
               "ToolTip": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\Persistence\\Repository\\LoanRepository.cs",
               "RelativeToolTip": "BookManagement.Infrastructure\\Persistence\\Repository\\LoanRepository.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAmwGAAAAAFAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwFAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T01:04:51.119Z",
               "EditorCaption": ""
