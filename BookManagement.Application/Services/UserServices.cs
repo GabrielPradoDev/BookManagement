@@ -52,7 +52,7 @@ public class UserServices : IUserService
         var user = await _userRepository.GetById(id);
         if (user == null)
         {
-            return null;
+            throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe");
         }
         user.Name = input.Name;
         user.Email = input.Email;
@@ -69,7 +69,7 @@ public class UserServices : IUserService
 
         if(user == null)
         {
-            return false;
+            throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe");
         }
 
         await _userRepository.DeleteUser(id);
