@@ -192,6 +192,9 @@
             "projectReferences": {
               "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\BookManagement.Core.csproj": {
                 "projectPath": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Core\\BookManagement.Core.csproj"
+              },
+              "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\Book  Management - Project\\BookManagement\\BookManagement.Infrastructure\\BookManagement.Infrastructure.csproj"
               }
             }
           }

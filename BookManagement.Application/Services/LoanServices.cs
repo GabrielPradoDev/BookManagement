@@ -9,9 +9,13 @@ namespace BookManagement.Application.Services;
 public class LoanServices : ILoanService
 {
     private readonly ILoanRepository _loanrepository;
-    public LoanServices(ILoanRepository loanrepository)
+    private readonly IUserRepository _userrepository;
+    private readonly IBookRepository _bookrepository;
+    public LoanServices(ILoanRepository loanrepository, IUserRepository userRepository, IBookRepository bookRepository)
     {
         _loanrepository = loanrepository;
+        _userrepository = userRepository;
+        _bookrepository = bookRepository;
     }
     public async Task<List<LoansViewModel>> GetAll()
     {
@@ -37,6 +41,32 @@ public class LoanServices : ILoanService
 
     public async Task<LoansViewModel> Create(LoanInputModel input)
     {
+        var user = await _userrepository.GetById(input.UserId);
+
+        if(user == null)
+        {
+            throw new KeyNotFoundException($"Usuario não existe");
+        }
+        var book = await _bookrepository.GetById(input.BookId);
+        if(book == null)
+        {
+            throw new KeyNotFoundException($"Livro não existe");
+        }
+
+        if(book.QTD <= 0)
+        {
+            throw new KeyNotFoundException($"Livro Sem Estoque");
+        }
+        // Verifica se já existe um empréstimo ativo para o mesmo usuário e livro
+        var existingLoan = (await _loanrepository.GetAll())
+            .FirstOrDefault(l => l.UserId == input.UserId && l.BookId == input.BookId && !l.IsReturned);
+
+        if (existingLoan != null)
+        {
+            throw new InvalidOperationException($"Usuário já possui um empréstimo ativo para o livro com ID {input.BookId}.");
+        }
+
+
         if (input.ExpectedReturnDate <= DateTime.Now)
         {
            throw new ArgumentException("A data de devolução prevista deve ser maior que a data atual.");
@@ -45,7 +75,9 @@ public class LoanServices : ILoanService
         var loan = new Loan
         {
             UserId = input.UserId,
+            User = user,
             BookId = input.BookId,
+            Book = book,
             LoanDate = input.LoanDate,
             ExpectedReturnDate = input.ExpectedReturnDate,
             IsReturned = false
@@ -58,14 +90,45 @@ public class LoanServices : ILoanService
     }
 
 
-        // Método auxiliar para converter um único User em UsersViewModel
-        public LoansViewModel ToLoanDto(Loan loan)
+    public async Task<string> ReturnBook(int id)
+    {
+        // Busca o empréstimo no repositório
+        var loan = await _loanrepository.GetLoanById(id);
+        if (loan == null)
+        {
+            throw new KeyNotFoundException($"Empréstimo com ID {id} não encontrado.");
+        }
+
+        // Verifica se o livro já foi devolvido
+        if (loan.IsReturned)
+        {
+            return "O livro já foi devolvido.";
+        }
+
+        // Atualiza a data de devolução e o status
+        loan.ReturnDate = DateTime.Now;
+        loan.IsReturned = true;
+
+        // Salva as alterações no repositório
+        await _loanrepository.UpdateLoan(loan);
+
+        // Calcula o status da devolução
+        var daysLate = (loan.ReturnDate.Value - loan.ExpectedReturnDate).Days;
+
+        return daysLate > 0
+            ? $"Livro devolvido com {daysLate} dias de atraso."
+            : "Livro devolvido em dia.";
+    }
+
+    // Método auxiliar para converter um único User em UsersViewModel
+    public LoansViewModel ToLoanDto(Loan loan)
     {
         return new LoansViewModel
         {
             Id = loan.Id,
             UserName = loan.User?.Name ?? "Usuário não encontrado",
             BookTitle = loan.Book?.Title ?? "Livro não encontrado",
+            BookId = loan.Book.Id,
             LoanDate = loan.LoanDate,
             ExpectedReturnDate = loan.ExpectedReturnDate,
             ReturnDate = loan.ReturnDate,

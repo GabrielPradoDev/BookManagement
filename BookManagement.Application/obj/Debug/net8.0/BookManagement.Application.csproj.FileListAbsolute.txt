@@ -16,3 +16,5 @@ C:\Book  Management - Project\BookManagement\BookManagement.Application\bin\Debu
 C:\Book  Management - Project\BookManagement\BookManagement.Application\obj\Debug\net8.0\BookManagement.Application.csproj.AssemblyReference.cache
 C:\Book  Management - Project\BookManagement\BookManagement.Application\obj\Debug\net8.0\BookManagement.Application.sourcelink.json
 C:\Book  Management - Project\BookManagement\BookManagement.Application\obj\Debug\net8.0\BookMana.768CEB90.Up2Date
+C:\Book  Management - Project\BookManagement\BookManagement.Application\bin\Debug\net8.0\BookManagement.Infrastructure.dll
+C:\Book  Management - Project\BookManagement\BookManagement.Application\bin\Debug\net8.0\BookManagement.Infrastructure.pdb

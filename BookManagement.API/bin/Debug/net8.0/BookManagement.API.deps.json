@@ -77,7 +77,8 @@
       },
       "BookManagement.Application/1.0.0": {
         "dependencies": {
-          "BookManagement.Core": "1.0.0"
+          "BookManagement.Core": "1.0.0",
+          "BookManagement.Infrastructure": "1.0.0"
         },
         "runtime": {
           "BookManagement.Application.dll": {
