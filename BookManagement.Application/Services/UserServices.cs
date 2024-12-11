@@ -27,7 +27,7 @@ public class UserServices : IUserService
 
         if (user == null)
         {
-           throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe"); // Retorna null se o usuário não for encontrado
+           throw new KeyNotFoundException($"Usuario com o Id {id} não encontrado ou não existe"); 
         }
 
         return ToUserDto(user);
